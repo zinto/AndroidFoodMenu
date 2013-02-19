@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp" >
+    <TextView        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txt_add_item"
+	        android:textSize="20sp" />
+	<LinearLayout	    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingTop="5dp">	
+	    <TextView        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txt_item_name" />
+	    <EditText	    
+	        android:id="@+id/etSQLName"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:inputType="text"
+			android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout	    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingTop="5dp">	
+	    <TextView        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/txt_rate" />
+		<EditText
+	        android:id="@+id/etSQLRate"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"/>
+	</LinearLayout>
+    <Button
+        android:id="@+id/bSQLAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_add_item" />
+	<TextView
+	    android:id="@+id/tvNotify"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	    
+	    android:text="@string/txt_add_item"/>
+</LinearLayout>
